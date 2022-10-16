@@ -1,6 +1,14 @@
 # Denoising-Autoencoder
 An implementation of a denoising autoencoder for missing value imputation
 
+  * [Autoencoders](#autoencoders)
+  * [Denoising Autoencoder implementation](#denoising-autoencoder-implementation)
+    + [Training phase](#training-phase)
+    + [Prediction phase](#prediction-phase)
+    + [System parameters](#system-parameters)
+
+
+
 ## Autoencoders
 
 Autoencoders are Neural Networks which try to reconstruct their input.
@@ -23,13 +31,17 @@ Denoising Autoencoder.
 
 ![ae](https://user-images.githubusercontent.com/17834602/196054894-7e5872d9-d702-47aa-b8b7-04620169f500.png)
 
-Figure 1: An Autoencoder network visualization. The hidden layer is the encoded input
-representation. Then, the decoder tries to reconstruct the input from the hidden layer (Jordan, 2018).
+**Figure 1**: *An Autoencoder network visualization. The hidden layer is the encoded input
+representation. Then, the decoder tries to reconstruct the input from the hidden layer (Jordan, 2018).*
+
+
 
 ![denoise](https://user-images.githubusercontent.com/17834602/196054988-eb0128c6-237d-40a6-85b1-78611ce90d13.png)
 
-Figure 2: A Denoising Autoencoder network visualization. The corrupted data are used as input and
-the reconstructed representation is compared against the original uncorrupted data (Jordan, 2018).
+**Figure 2**: *A Denoising Autoencoder network visualization. The corrupted data are used as input and
+the reconstructed representation is compared against the original uncorrupted data (Jordan, 2018).*
+
+
 
 ## Denoising Autoencoder implementation
 In our data, there are missing values, which can be considered as noise.
