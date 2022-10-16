@@ -15,16 +15,18 @@ The Autoencoder must be able to generalize and not just learn the input
 data. Towards this goal, an approach is to slightly corrupt the input data but
 maintain the uncorrupted data as the network’s target. This way, the model
 can’t simple learn the input but it is forced to learn a mapping between the
-input and a manifold. A manifold is an area in space where the input data![ae](https://user-images.githubusercontent.com/17834602/196054894-7e5872d9-d702-47aa-b8b7-04620169f500.png)
-
+input and a manifold. A manifold is an area in space where the input data
 are concentrated (Goodfellow et al., 2016). So, if this manifold describes the
 original data, the added noise is removed. Such a network is known as a
 Denoising Autoencoder.
 
 
+![ae](https://user-images.githubusercontent.com/17834602/196054894-7e5872d9-d702-47aa-b8b7-04620169f500.png)
+
 Figure 1: An Autoencoder network visualization. The hidden layer is the encoded input
 representation. Then, the decoder tries to reconstruct the input from the hidden layer (Jordan, 2018).
 
+![denoise](https://user-images.githubusercontent.com/17834602/196054988-eb0128c6-237d-40a6-85b1-78611ce90d13.png)
 
 Figure 2: A Denoising Autoencoder network visualization. The corrupted data are used as input and
 the reconstructed representation is compared against the original uncorrupted data (Jordan, 2018).
