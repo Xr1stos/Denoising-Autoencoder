@@ -6,6 +6,8 @@ An implementation of a denoising autoencoder for missing value imputation
     + [Training phase](#training-phase)
     + [Prediction phase](#prediction-phase)
     + [System parameters](#system-parameters)
+  * [Pros and cons](#pros-and-cons) 
+
 
 
 
@@ -109,6 +111,8 @@ between 8 and 64. Small datasets tend perform better with smaller batch
 size. In addition training with a smaller batch size tends to give better
 prediction results.
 * Early stopping with best epoch parameters was used.
+
+## Pros and cons
 
 The advantages of the above method are that it will perform better with
 bigger datasets as it is a Neural Network and the **model can be saved and used
